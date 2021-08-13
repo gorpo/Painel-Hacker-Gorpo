@@ -1,0 +1,210 @@
+/*Powered by FASTDROID*/
+
+@font-face{
+	font-family:Oduda Bold font;
+	src:url(../../404.html)
+}
+
+body{
+	margin:0;
+
+
+/*background: url(fast123.jpg)/*tpa=http://falconmasters.com/demos/sitio_estilo_hacker/bg.jpg*/;*/
+	background-size:cover;
+	background-attachment: fixed;
+	background-position:0 0px;
+}
+/*Header*/
+header{
+	color:white;
+	position: relative;
+	height: auto;
+}
+.title {
+    text-align: center;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 2.7rem;
+    padding: 40px;
+    color: #000000;
+    font-weight: 900;
+}
+
+
+/*Body Principal*/
+.title img{
+	display: inline-block;
+	height: 2.5rem;
+	vertical-align: middle;
+	
+}
+
+.hh-title {
+  text-align: center;
+	font-family: 'Century gothic';
+	font-size: 3;
+	color: #f04a4a;
+    font-weight: bold;
+}
+
+/*Inputs
+form#console {
+	text-align: center;
+}*/
+.Ilabel, .input_text,.input_texts {
+	display: -webkit-inline-box;
+	font-family: 'Century Gothic';
+	font-size: 18px;
+}
+.Ilabel {
+	background-color: #3399FF;
+	padding: 5px;
+	border-radius: 5px 0 0 5px;
+	border-bottom: 2px #3399FF;
+	color: white;	position: relative;
+
+}
+.input_text {
+	padding: 4px;
+	border: 0;
+	border-top: 1px solid #3399FF;
+	border-bottom: 2px solid #3399FF;
+	border-right: 2px solid #3399FF;
+	border-radius: 0 5px 5px 0;
+	vertical-align: bottom;
+	outline: none;
+	font-size:17px;
+		color:#565656;
+		position: relative;
+    font-weight: bold;
+
+}
+select.input_text {
+	margin-left: -5px;
+	font-size: 16px;
+	background: white;
+		color:#565656
+}
+.p {
+	display: -webkit-inline-box;
+	margin-bottom: 12px;
+}
+.s{
+	margin-left: -5px;
+	background: white;
+	padding: 4px;
+}
+.input_text>label{
+	cursor:pointer;
+		color:#565656;
+		position: relative;
+}
+.clean{
+	background: #000000 url("../../404.html") 0 0 no-repeat;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 24px;
+	width: 24px;
+	float: right;
+	margin: 0 -12px -12px 0;
+	transition: all 0.5s;
+	-webkit-transition: all .5s;
+		position: relative;
+	z-index: 100
+}
+.clean:hover {
+	background: #6c3d3d url("../../404.html") 0 0 no-repeat;
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+		position: relative;
+}
+.cleanit{
+	background: #4d4f53 url("../../404.html") 0 0 no-repeat;
+	border-radius: 50%;
+	cursor: pointer;
+	height: 24px;
+	width: 24px;
+	float: right;
+	position: relative;
+	transition: all 0.5s;
+	-webkit-transition: all .5s;
+		position: relative;
+}
+.cleanit:hover {
+	background: rgba(0, 0, 0, 0.87) url("../../404.html") 0 0 no-repeat;
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+.eighty{
+	width:75%;
+}
+
+/*Boton*/
+.Lbutton {
+
+	background-color:#3399FF;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	display:inline-block;
+	cursor:pointer;
+	color: white;
+	font-family:Courier New;
+	font-size:20px;
+	font-weight:bold;
+	padding:8px 40px;
+	text-decoration:none;
+		position: relative;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+.Lbutton:active {
+	position:relative;
+	top:1px;
+		position: relative;
+}
+
+
+
+/*Ajustar Respoooosiveeeee*/
+@media (max-width: 376px){
+	.title{
+		font-size: 2.9rem;
+	}
+	.p{
+
+	}
+	.Ilabel{
+		width: 70%;
+		border-radius: 100;
+	}
+	.input_text{
+		width: 80%;
+		border-radius: 100;
+		text-align: -webkit-center;
+		border-right: 50;
+			color:#565656
+	}
+	.inline{
+		width: 40%;
+	}
+	.hh{
+		text-align: center;
+	}
+}
+@media (max-width: 595px){
+	.form{
+		width:99%;
+		margin: 5px 0 5px 0;
+	}
+}
+
+::selection {
+    background: #f75153;
+    color: #fff;
+}

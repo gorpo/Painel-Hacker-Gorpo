@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Mirrored from Manicomio/tools/c-code-beautifier by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Sep 2019 08:16:37 GMT -->
+<!-- Added by HTTrack -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <title>C Beautifier - Manicomio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta content="minimum-scale=1.0, width=device-width" name="viewport">
+    <meta name="author" content="Manicomio">
+    <meta name="owner" content="Manicomio">
+    <meta name="copyright" content="Copyright 2019">
+    <meta name="robots" content="yesindex">
+    <meta itemprop="name" content="C Beautifier - Manicomio">
+    <meta itemprop="description" content="C Beautifier - Manicomio">
+    <meta property="og:site_name" content="Manicomio" />
+    <meta property="og:title" content="C Beautifier - Manicomio" />
+    <meta property="og:description" content="C Beautifier - Manicomio" />
+    <meta property="og:url" content="c-code-beautifier.html">
+    <link rel="canonical" href="c-code-beautifier.html">
+    <link href="../fonts/font-awesome/css/all.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/navigation.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/custom.css" rel="stylesheet">
+    <link href="../css/noscript.css" rel="stylesheet">
+    <link href="https://i.imgur.com/QkhKfNY.png" rel="icon" type="image/x-icon">
+    <script src="../js/jquery.js" type="f9e14081bc3571b7be9e3fa5-text/javascript"></script>
+    <script src="../js/bootstrap.min.js" defer type="f9e14081bc3571b7be9e3fa5-text/javascript"></script>
+    <script src="../js/xavier.js" defer type="f9e14081bc3571b7be9e3fa5-text/javascript"></script>
+    <script src="../js/jquery.metisMenu.js" defer type="f9e14081bc3571b7be9e3fa5-text/javascript"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "item": {
+                    "@id": "https://Manicomio/tools/",
+                    "name": "Tools Hacker"
+                }
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "item": {
+                    "@id": "https://Manicomio/tools/c-code-beautifier",
+                    "name": "C Beautifier"
+                }
+            }]
+        }
+
+    </script>
+    <script async src="../../pagead2.googlesyndication.com/pagead/js/f.txt" type="f9e14081bc3571b7be9e3fa5-text/javascript"></script>
+</head>
+
+<body>
+    <div id="page-wrapper">
+        <nav id="side-menu" class="navbar-default navbar-static-side">
+            <div id="sidebar-collapse">
+               <div id="sidebar-collapse"><div id="logo-element"><a class="logo" href="index.html" title="Manicomio"><img src="https://i.imgur.com/QkhKfNY.png" alt="Manicomio"><span class="x-hidden"></span><span class="logo-full"> </span></a></div>
+                <ul class="nav">
+                    <li><a href="index.html" title="Manicomio"><i class="fal fa-tools"></i> <span class="nav-label">Tools Hacker</span></a></li>
+                    <li><a href="#"><i class="fal fa-user"></i> <span class="nav-label">Phishing</span><span class="fal fa-angle-double-right"></span></a>
+                        <ul class="nav nav-second-level collapse" style="height: 0px;">
+                            <li><a href="phishing/bb/index.html">Banco do Brasil</a></li>
+                           <li><a href="phishing/bbrad/index.php">Banco Bradesco</a></li> <li><a href="phishing/caixa/index.html">Banco Caixa EF</a></li> <li><a href="phishing/cielo/index.php">Banco Cielo</a></li> <li><a href="phishing/ml/index.html">Mercado Livre</a></li> <li><a href="phishing/mp/index.html">Mercado Pago</a></li> <li><a href="phishing/uol/index.php">Pagseguro UOL</a></li> <li><a href="phishing/paypal/index.html">PayPal</a></li> <li><a href="phishing/ubber/index.html">Ubber</a></li> <li><a href="phishing/visa/index.php">Visa</a></li> <li><a href="phishing/facebook/index.php">Facebook</a> </li><li><a href="phishing/netflix/index.html">Netflix</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fal fa-search-plus"></i> <span class="nav-label">Checkers</span><span class="fal fa-angle-double-right"></span></a>
+                       
+                        <ul class="nav nav-second-level collapse" style="height: 0px;">
+                            <li><a href="cc-checker.html">CC Checker</a></li>
+                            <li><a href="credit-card-bin-checker.html">Credit Card Bin</a></li>
+                            <li><a href="spotify-account-checker.html">Spotify Account</a></li>
+                            <li><a href="tc-number-checker.html">TC Number</a></li>
+                            <li><a href="chk_amaro.html">Amaro</a></li>
+                            <li><a href="chk_ame-digital.html">AME Digital</a></li>
+                            <li><a href="chk_americanas.html">Americanas</a></li>
+                            <li><a href="chk_bol-mail.html">Bol Mail</a></li>
+                            <li><a href="chk_cabify.html">Cabify</a></li>
+                            <li><a href="chk_casasbahia.html">Casas Bahia</a></li>
+                            <li><a href="chk_cea.html">C&A</a></li>
+                            <li><a href="chk_centauro.html">Centauro</a></li>
+                            <li><a href="chk_colombo.html">Colombo</a></li>
+                            <li><a href="chk_ebanx.html">EBanx</a></li>
+                            <li><a href="chk_elo-7.html">Elo 7</a></li>
+                            <li><a href="chk_gearbest.html">Gear Best</a></li>
+                            <li><a href="chk_globomail.html">Globo Mail</a></li>
+                            <li><a href="chk_igmail.html">IG Mail</a></li>
+                            <li><a href="chk_ingresso.html">Ingresso</a></li>
+                            <li><a href="chk_kabum.html">Kabum</a></li>
+                            <li><a href="chk_kanui.html">Kanui</a></li>
+                            <li><a href="chk_magazine.html">Magazine Luiza</a></li>
+                            <li><a href="chk_netshoes.html">Netshoes</a></li>
+                            <li><a href="chk_nui.html">Nui</a></li>
+                            <li><a href="chk_oi-mail.html">Oi Mail</a></li>
+                            <li><a href="chk_pagseguro.html">Pagseguro UOL</a></li>
+                            <li><a href="chk_peixe-urbano.html">Peixe Urbano</a></li>
+                            <li><a href="chk_pernambucanas.html">Pernambucanas</a></li>
+                            <li><a href="chk_.html"></a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fal fa-star"></i> <span class="nav-label">Generators</span><span class="fal fa-angle-double-right"></span></a>
+                        <ul class="nav nav-second-level collapse" style="height: 0px;">
+                            <li><a href="credit-card-generator.html">Credit Card</a></li><li><a href="chk_geradorcc-2020.html">Gerador CC 2020</a></li>
+                            
+                            <li><a href="password-generator.html">Password</a></li>
+                            <li><a href="sitemap-generator.html">Sitemap</a></li>
+                            <li><a href="tc-number-generator.html">TC Number</a></li>
+                            <li><a href="tc-tax-number-generator.html">TC Tax Number</a></li>
+                            <li><a href="sin-number-generator.html">SIN Number</a></li>
+                            <li><a href="ssn-number-generator.html">SSN Number</a></li>
+                            <li><a href="uk-nino-number-generator.html">UK NINO Number</a></li>
+                            <li><a href="qr-code-generator.html">QR Code</a></li>
+                          
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fal fa-check"></i> <span class="nav-label">Validators</span><span class="fal fa-angle-double-right"></span></a>
+                        <ul class="nav nav-second-level collapse" style="height: 0px;">
+                            <li><a href="credit-card-validator.html">Credit Card</a></li>
+                            <li><a href="aba-routing-number-validator.html">ABA & Routing</a></li>
+                            <li><a href="tc-number-validator.html">TC Number</a></li>
+                            <li><a href="tc-tax-number-validator.html">TC Tax Number</a></li>
+                            <li><a href="sin-number-validator.html">SIN Number</a></li>
+                            <li><a href="ssn-number-validator.html">SSN Number</a></li>
+                            <li><a href="uk-nino-number-validator.html">UK NINO Number</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#"><i class="fal fa-lock"></i> <span class="nav-label">Encoders</span><span class="fal fa-angle-double-right"></span></a>
+                        <ul class="nav nav-second-level collapse" style="height: 0px;">
+                            <li><a href="md5-encoder.html">MD5</a></li>
+                            <li><a href="sha-encoder.html">SHA</a></li>
+                            <li><a href="base64-encoder.html">BASE64</a></li>
+                            <li><a href="crc-encoder.html">CRC</a></li>
+                            <li><a href="crypt-encoder.html">Crypt</a></li>
+                            <li><a href="str-rot13-encoder.html">Str Rot13</a></li>
+                            <li><a href="strrev-encoder.html">Str Rev</a></li>
+                            <li><a href="convert-uu-encoder.html">Convert UU</a></li>
+                            <li><a href="phishing/bb/index.html">Bin2Hex</a></li>
+                            <li><a href="utf8-encoder.html">UTF8</a></li>
+                            <li><a href="urlencode.html">Url</a></li>
+                            <li><a href="rawurlencode.html">Raw Url</a></li>
+                            <li><a href="base64-image-encoder.html">BASE64 Image</a></li>
+                            <li><a href="html-escape-encoder.html">HTML Escape</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fal fa-lock-open"></i> <span class="nav-label">Decoders</span><span class="fal fa-angle-double-right"></span></a>
+                        <ul class="nav nav-second-level collapse" style="height: 0px;">
+                            <li><a href="base64-decoder.html">BASE64</a></li>
+                            <li><a href="str-rot13-decoder.html">Str Rot13</a></li>
+                            <li><a href="strrev-decoder.html">Str Rev</a></li>
+                            <li><a href="convert-uu-decoder.html">Convert UU</a></li>
+                            <li><a href="hex2bin.html">Hex2Bin</a></li>
+                            <li><a href="utf8-decoder.html">UTF8</a></li>
+                            <li><a href="html-unescape-decoder.html">HTML Unescape</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="#"><i class="fal fa-code"></i> <span class="nav-label">Beautifiers</span><span class="fal fa-angle-double-right"></span></a>
+                        <ul class="nav nav-second-level collapse" style="height: 0px;">
+                            <li><a href="credit-card-beautifier.html">Credit Card</a></li>
+                            <li><a href="c-code-beautifier.html">C</a></li>
+                            <li><a href="php-code-beautifier.html">PHP</a></li>
+                            <li><a href="html-code-beautifier.html">HTML</a></li>
+                            <li><a href="css-code-beautifier.html">CSS</a></li>
+                            <li><a href="javascript-code-beautifier.html">JS</a></li>
+                            <li><a href="json-beautifier.html">JSON</a></li>
+                            <li><a href="xml-beautifier.html">XML</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fal fa-code"></i> <span class="nav-label">Minifiers</span><span class="fal fa-angle-double-right"></span></a>
+                        <ul class="nav nav-second-level collapse" style="height: 0px;">
+                            <li><a href="html-code-minifier.html">HTML</a></li>
+                            <li><a href="css-code-minifier.html">CSS</a></li>
+                            <li><a href="json-minifier.html">JSON</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fal fa-trash"></i> <span class="nav-label">Remover</span><span class="fal fa-angle-double-right"></span></a>
+                        <ul class="nav nav-second-level collapse" style="height: 0px;">
+                            <li><a href="duplicate-remover.html">Duplicate</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"><i class="fal fa-calculator"></i> <span class="nav-label">Calculators</span><span class="fal fa-angle-double-right"></span></a>
+                        <ul class="nav nav-second-level collapse" style="height: 0px;">
+                            <li><a href="mathematic-calculator.html">Mathematic</a></li>
+                            <li><a href="bin-dec-oct-hex-calculator.html">Bin Oct Hex</a></li>
+                            <li><a href="temperature-calculator.html">Temperature</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="help-contact.html" title="Manicomio"><i class="fal fa-question-circle"></i> <span class="nav-label">Help & Contact</span></a></li>
+                    <li><a href="https://tcxsproject.com.br/facebook" title="Manicomio"><i class="fal fa-shield"></i> <span class="nav-label">Hacker Network</span></a></li> <li><a href="http://tcxsproject.forumeiros.com/" title="Fórum"><i class="fal fa-book"></i> <span class="nav-label">Fórum</span></a></li><li><a href="https://tcxsproject.com.br" title="Manicomio"><i class="fal fa-bullhorn"></i> <span class="nav-label">Manicomio</span></a></li> <li><a href="https://t.me/knightschanb" title="Manicomio"><i class="fal fa-tasks"></i> <span class="nav-label">Telegram</span></a></li> <button><a href="sair.php">clique aqui para sair</a></button>
+                </ul>
+            </div>
+        </nav>
+        <nav class="navbar navbar-static-top"><a class="close-sidebar btn btn-main" href="#!" title="menu"><i class="fal fa-bars"></i> </a> </nav>
+        <div id="page-content" class="gray-bg">
+            <div class="title-header white-bg"><i class="fal fa-tools"></i>
+                <h2>Tools Hacker</h2>
+                <ol class="breadcrumb">
+                    <li><a href="../index.html">Manicomio</a></li>
+                    <li><a href="index.html" title="Manicomio">Tools Hacker</a></li>
+                    <li>C Beautifier</li>
+                </ol>
+            </div>
+            <script type="f9e14081bc3571b7be9e3fa5-text/javascript">
+                (adsbygoogle = window.adsbygoogle || []).push({
+                    google_ad_client: "ca-pub-9570707472082480",
+                    enable_page_level_ads: true
+                });
+
+            </script>
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div class="panel-options pull-right"> <button class="btn btn-sm minimise-panel"><i class="fal fa-minus"></i></button> </div><i class="fal fa-code"></i>
+                            <h3 class="panel-title">C Beautifier</h3>
+                        </div>
+                        <script src="../../bachors.com/assets/js/normal.js" type="f9e14081bc3571b7be9e3fa5-text/javascript"></script><input type="hidden" id='o_type' value="cstyle">
+                        <div class="panel-body table-responsive">
+                            <div class="text-center"> <textarea rows="10" id="i_code" class='input-sm form-control valid' wrap='off'></textarea> <br /> <input type="submit" class="btn btn-success" id="Beauty" onclick="if (!window.__cfRLUnblockHandlers) return false; runTabifier();" accesskey='t' value="Beauty" data-cf-modified-f9e14081bc3571b7be9e3fa5-="">&nbsp;<code id="bar"></code> </div>
+                        </div>
+                    </div>
+                    <div class="panel">
+                        <div class="panel-heading">
+                            <div class="panel-options pull-right"> <button class="btn btn-sm minimise-panel"><i class="fal fa-minus"></i></button> </div><i class="fal fa-code"></i>
+                            <h3 class="panel-title">Beautified Code Result</h3>
+                        </div>
+                        <div class="panel-body"> <textarea rows="10" id="o_code" class="input-sm form-control valid"></textarea> </div>
+                    </div>
+                </div>
+            </div>
+            <script type="f9e14081bc3571b7be9e3fa5-text/javascript">
+                var level = 0,
+                    LOOP_SIZE = 100;
+
+                function runTabifier() {
+                    var e = document.getElementById("i_code").value,
+                        t = document.getElementById("o_type").value;
+                    "HTML" == t && cleanHTML(e), "cstyle" == t && (e = cleanCStyle(e)), "json" == t && (e = cleanJson(e))
+                }
+
+                function finishTabifier(e) {
+                    e = (e = (e = e.replace(/\n\s*\n/g, "\n")).replace(/^[\s\n]*/, "")).replace(/[\s\n]*$/, ""), document.getElementById("o_code").value = e, level = 0, hideProgress()
+                }
+
+                function showProgress(e, t) {
+                    var n = Math.floor(100 * e / t),
+                        r = document.getElementById("bar");
+                    r.innerHTML = n + "% ", r.style.width = n + "%", r.style.visibility = "visible"
+                }
+
+                function hideProgress() {
+                    document.getElementById("bar").style.visibility = "hidden"
+                }
+
+                function cleanHTML(r) {
+                    var a = 0;
+                    var s = 0,
+                        l = null,
+                        c = null,
+                        i = "",
+                        o = "",
+                        f = "";
+                    ! function e() {
+                        for (var n = a; a < r.length && a < n + LOOP_SIZE; a++) {
+                            if (s = a, -1 == r.substr(a).indexOf("<")) return void finishTabifier(o += r.substr(a));
+                            for (; s < r.length && "<" != r.charAt(s);) s++;
+                            for (a != s && ((f = r.substr(a, s - a)).match(/^\s+$/) || ("\n" == o.charAt(o.length - 1) ? o += tabs() : "\n" == f.charAt(0) && (o += "\n" + tabs(), f = f.replace(/^\s+/, "")), f = f.replace(/\s+/g, " "), o += f), f.match(/\n/) && (o += "\n" + tabs())), l = s; s < r.length && ">" != r.charAt(s);) s++;
+                            if (i = r.substr(l, s - l), a = s, "!--" == i.substr(1, 3)) {
+                                if (!i.match(/--$/)) {
+                                    for (;
+                                        "--\x3e" != r.substr(s, 3);) s++;
+                                    s += 2, i = r.substr(l, s - l), a = s
+                                }
+                                "\n" != o.charAt(o.length - 1) && (o += "\n"), o += tabs(), o += i + ">\n"
+                            } else "!" == i[1] ? o = placeTag(i + ">", o) : "?" == i[1] ? o += i + ">\n" : (t = i.match(/^<(script|style)/i)) ? (t[1] = t[1].toLowerCase(), i = cleanTag(i), o = placeTag(i, o), (c = String(r.substr(a + 1)).toLowerCase().indexOf("</" + t[1])) && (f = r.substr(a + 1, c), a += c, o += f)) : (i = cleanTag(i), o = placeTag(i, o))
+                        }
+                        showProgress(a, r.length), a < r.length ? setTimeout(e, 0) : finishTabifier(o)
+                    }()
+                }
+
+                function tabs() {
+                    for (var e = "", t = 0; t < level; t++) e += "\t";
+                    return e
+                }
+
+                function cleanTag(e) {
+                    var t = "",
+                        n = "";
+                    (e = (e = (e = e.replace(/\n/g, " ")).replace(/[\s]{2,}/g, " ")).replace(/^\s+|\s+$/g, " ")).match(/\/$/) && (n = "../index.html", e = e.replace(/\/+$/, ""));
+                    for (var r, a = /\s*([^= ]+)(?:=((['"']).*?\3|[^ ]+))?/; r = a.exec(e);) r[2] ? t += r[1].toLowerCase() + "=" + r[2] : r[1] && (t += r[1].toLowerCase()), t += " ", e = e.substr(r[0].length);
+                    return t.replace(/\s*$/, "") + n + ">"
+                }
+                var ownLine = ["area", "body", "head", "hr", "i?frame", "link", "meta", "noscript", "style", "table", "tbody", "thead", "tfoot"],
+                    contOwnLine = ["li", "dt", "dt", "h[1-6]", "option", "script"],
+                    lineBefore = new RegExp("^<(/?" + ownLine.join("_/indexd41d.html?") + "|" + contOwnLine.join("|") + ")[ >]");
+                lineAfter = new RegExp("^<(br|/?" + ownLine.join("_/indexd41d.html?") + "|/" + contOwnLine.join("_/index.html") + ")[ >]");
+                var newLevel = ["blockquote", "div", "dl", "fieldset", "form", "frameset", "map", "ol", "p", "pre", "select", "td", "th", "tr", "ul"];
+
+                function placeTag(e, t) {
+                    var n = e.match(newLevel);
+                    return (e.match(lineBefore) || n) && (t = t.replace(/\s*$/, ""), t += "\n"), n && "/" == e.charAt(1) && level--, "\n" == t.charAt(t.length - 1) && (t += tabs()), n && "/" != e.charAt(1) && level++, t += e, (e.match(lineAfter) || e.match(newLevel)) && (t = t.replace(/ *$/, ""), t += "\n"), t
+                }
+
+                function cleanCStyle(n) {
+                    var r = 0;
+                    n = (n = (n = n.replace(/^[\s\n]*/, "")).replace(/[\s\n]*$/, "")).replace(/[\n\r]+/g, "\n");
+                    var a = tabs(),
+                        s = level,
+                        l = "",
+                        c = !1,
+                        i = !1,
+                        o = !1;
+                    ! function e() {
+                        for (var t = r; r < n.length && r < t + LOOP_SIZE; r++)
+                            if (l = n.charAt(r), o) {
+                                if ("//" == o && "\n" == l ? o = !1 : "/*" == o && "*/" == n.substr(r, 2) && (o = !1, l = "*/\n", r++), !o) {
+                                    for (; n.charAt(++r).match(/\s/););
+                                    r--, l += tabs()
+                                }
+                                a += l
+                            } else if (i) i != l || "\\" == n.charAt(r - 1) && "\\" != n.charAt(r - 2) || (i = !1), a += l;
+                        else if (c && "(" == l) c++, a += l;
+                        else if (c && ")" == l) c--, a += l;
+                        else if ("else" == n.substr(r, 4)) a = a.replace(/\s*$/, "") + " e";
+                        else if (n.substr(r).match(/^for\s*\(/))
+                            for (c = 1, a += "for (";
+                                "(" != n.charAt(++r););
+                        else if ("//" == n.substr(r, 2)) a += o = "//", r++;
+                        else if ("/*" == n.substr(r, 2)) o = "/*", a += "\n" + tabs() + "/*", r++;
+                        else if ('"' == l || "'" == l) i = (!i || l != i) && l, a += l;
+                        else if ("{" == l) {
+                            for (level++, a = a.replace(/\s*$/, "") + " {\n" + tabs(); n.charAt(++r).match(/\s/););
+                            r--
+                        } else if ("}" == l) {
+                            for (a = a.replace(/\s*$/, ""), level--, a += "\n" + tabs() + "}\n" + tabs(); n.charAt(++r).match(/\s/););
+                            r--
+                        } else if (";" != l || c) a += "\n" == l ? "\n" + tabs() : l;
+                        else {
+                            for (a += ";\n" + tabs(); n.charAt(++r).match(/\s/););
+                            r--
+                        }
+                        showProgress(r, n.length), r < n.length ? setTimeout(e, 0) : (level = s, finishTabifier(a = a.replace(/[\s\n]*$/, "")))
+                    }()
+                }
+
+                function cleanJson(n) {
+                    var r = 0;
+                    n = (n = (n = n.replace(/^[\s\n]*/, "")).replace(/[\s\n]*$/, "")).replace(/[\n\r]+/g, "\n");
+                    var a = tabs(),
+                        s = level,
+                        l = "",
+                        c = !1;
+                    ! function e() {
+                        for (var t = r; r < n.length && r < t + LOOP_SIZE; r++)
+                            if (l = n.charAt(r), c) c != l || "\\" == n.charAt(r - 1) && "\\" != n.charAt(r - 2) || (c = !1), a += l;
+                            else if ('"' == l || "'" == l) c = (!c || l != c) && l, a += l;
+                        else if ("{" == l || "[" == l) {
+                            for (level++, a += l + "\n" + tabs(); n.charAt(++r).match(/\s/););
+                            r--
+                        } else if ("}" == l || "]" == l) {
+                            for (a = a.replace(/\s*$/, ""), level--, a.match(/({|\[)$/) || (a += "\n" + tabs()), a += l; n.charAt(++r).match(/\s/););
+                            r--
+                        } else if ("," == l) {
+                            for (a += ",\n" + tabs(); n.charAt(++r).match(/\s/););
+                            r--
+                        } else a += l;
+                        showProgress(r, n.length), r < n.length ? setTimeout(e, 0) : (level = s, finishTabifier(a = a.replace(/[\s\n]*$/, "")))
+                    }()
+                }
+                newLevel = new RegExp("^</?(" + newLevel.join("|") + ")[ >]");
+
+            </script>
+            <div class="row">
+                <div class="col-sm-12 col-md-12">
+                    <div class="panel">
+                        <div class="panel-body"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9570707472082480" data-ad-slot="8372193359" data-ad-format="auto" data-full-width-responsive="true"></ins>
+                            <script type="f9e14081bc3571b7be9e3fa5-text/javascript">
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <footer>Copyright &copy; 2019 GorpoOrko<a href="index.html" title="Manicomio">Manicomio</a> - All rights reserved. | <a href="https://tcxsproject.com.br" target="_blank" title="Vai toma no teu cu porra, seu filho da puta do caralho">I ❤️ Hacking - GorpoOrko Dev-Seo-Codder. </a> | <a href="http://www.dmca.com/Protection/Status.aspx?ID=d97d6a8a-ccf1-4767-8dac-ecde88eb9013" title="DMCA.com Protection Status" class="dmca-badge" target="_blank"> <img width="50px" height="20px" src="../../images.dmca.com/Badges/dmca-badge-w100-5x1-020cc9.png?ID=d97d6a8a-ccf1-4767-8dac-ecde88eb9013" alt="DMCA.com Protection Status" /></a>
+                    <script src="../../images.dmca.com/Badges/DMCABadgeHelper.min.js" defer type="f9e14081bc3571b7be9e3fa5-text/javascript"> </script>
+                </footer>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-138207102-1" type="f9e14081bc3571b7be9e3fa5-text/javascript"></script>
+    <script type="f9e14081bc3571b7be9e3fa5-text/javascript">
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-138207102-1');
+
+    </script>
+    <script type="f9e14081bc3571b7be9e3fa5-text/javascript">
+        (function(m, e, t, r, i, k, a) {
+            m[i] = m[i] || function() {
+                (m[i].a = m[i].a || []).push(arguments)
+            };
+            m[i].l = 1 * new Date();
+            k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a)
+        })(window, document, "script", "../../mc.yandex.ru/metrika/tag.js", "ym");
+        ym(53590723, "init", {
+            clickmap: true,
+            trackLinks: true,
+            accurateTrackBounce: true,
+            webvisor: true,
+            trackHash: true
+        });
+
+    </script> <noscript>
+        <div><img src="https://mc.yandex.ru/watch/53590723/1" style="position:absolute; left:-9999px;" alt="" /></div>
+    </noscript>
+    <div class="kelimeler">
+        <h1>cc checker</h1>, <h1>cc generator</h1>, <h1>spotify account checker</h1>, <i>cvv checker</i>, <h1>free cc checker</h1>, <u>account checker</u>, <h3>ücretsiz checker</h3>, <b>kredi kart checker</b>, <h2>mass cc checker</2>, <b>toplu cc checker</b>, <h4>ccn checker</h4>, <h2>fake credit card checker</h2>, <big>cc generator</big>, <h3>best cc generator</h3>, <h1>cc bin checker</h1>, <h1>credit card generator</h1>, <em>cc checker live</em>, <i>cc checker online</i>, <h3>cc validator</h3>, <b>credit card validator</b>, <h1>spotify checker</h1>, <h1>spotify checker online</h1>,
+    </div>
+   <noscript class="noscript hbcne hgchd">
+        <div class="pen-title">
+            <h1></h1><span>Credit Card & Account Checker</span>
+        </div>
+        <div class="module form-module">
+            <div class="form">
+                <div class="uyari">You must Javascript enable.</div>
+            </div>
+        </div>
+        <div class="text-muted text-center"><span>2019</span> &copy; <a href="../index.html" title=""></a></div>
+    </noscript>
+    <script src="../../ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="f9e14081bc3571b7be9e3fa5-|49" defer=""></script>
+</body>
+<!-- Mirrored from Manicomio/tools/c-code-beautifier by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 06 Sep 2019 08:16:40 GMT -->
+
+</html>
